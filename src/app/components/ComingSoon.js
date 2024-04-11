@@ -15,7 +15,12 @@ const ComingSoon = () => {
       <div className={styles.background}></div>
       <div className={styles.title}>
         <div className={styles.logo}>
-          <Image src={"/assets/espectro_logo.png"} fill alt="Logo Espectro" />
+          <Image
+            src={"/assets/espectro_logo.png"}
+            fill
+            alt="Logo Espectro"
+            priority
+          />
         </div>
         <h1 style={{ display: "none" }}>Studio Espectro</h1>
         <h2 className={`${newOrderFont.className} ${styles.h2}`}>
