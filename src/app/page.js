@@ -1,4 +1,5 @@
 import CTA from "./components/CTA";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Just4 from "./components/Just4";
 import Location from "./components/Location";
@@ -23,6 +24,7 @@ export default function Home() {
       <Just4 />
       <Sentence />
       <Location />
+      <Contact />
     </main>
   );
 }

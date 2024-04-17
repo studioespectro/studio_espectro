@@ -1,0 +1,46 @@
+.container {
+  background-color: var(--light_gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 0.5px solid #706d6b;
+  padding-bottom: 100px;
+}
+
+.container img:first-of-type {
+  margin-bottom: 100px;
+}
+
+.container p {
+  font-family: var(--new-order);
+  font-size: 27px;
+  line-height: 30px;
+  letter-spacing: calc(27px * 0.17);
+  text-align: center;
+}
+
+.container p span {
+  font-size: 33px;
+}
+
+.form {
+  margin-top: 80px;
+}
+
+.form label {
+  font-family: var(--league-spartan);
+  font-size: 34px;
+  letter-spacing: calc(34px * 0.04);
+  text-transform: uppercase;
+  color: #aca9a7;
+}
+
+.form input {
+  display: block;
+  width: 570px;
+  height: 40px;
+  border: 1px solid var(--dark_gray);
+  border-radius: 9px;
+  margin-bottom: 35px;
+  background-color: transparent;
+}
