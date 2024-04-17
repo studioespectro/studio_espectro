@@ -1,14 +1,21 @@
 import CTA from "./components/CTA";
-import ComingSoon from "./components/ComingSoon";
 import Header from "./components/Header";
 import Just4 from "./components/Just4";
 import Navbar from "./components/Navbar";
 import Sentence from "./components/Sentence";
-import styles from "./page.module.css";
+import {
+  FilsonPro,
+  NewOrder,
+  LeagueSpartan,
+  HeadLineA,
+  YellowTail,
+} from "./helpers/fonts";
 
 export default function Home() {
   return (
-    <main>
+    <main
+      className={`${FilsonPro.variable} ${LeagueSpartan.variable} ${HeadLineA.variable} ${YellowTail.variable} ${NewOrder.variable}`}
+    >
       <Navbar />
       <Header />
       <CTA />

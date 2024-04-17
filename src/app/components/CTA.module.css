@@ -22,7 +22,7 @@
 }
 
 .p1 {
-  font-family: League Spartan, sans-serif;
+  font-family: var(--league-spartan);
   font-weight: bold;
   font-size: 64px;
   letter-spacing: calc(64px * 0.09);
@@ -31,14 +31,14 @@
 }
 
 .p2 {
-  font-family: League Spartan, sans-serif;
+  font-family: var(--league-spartan);
   font-weight: bold;
   font-size: 68px;
   letter-spacing: calc(64px * 0.05);
 }
 
 .p3 {
-  font-family: Filson Pro, sans-serif;
+  font-family: var(--filson-pro);
   font-weight: 100;
   font-size: 26px;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
 }
 
 .p4 {
-  font-family: YellowTail, sans-serif;
+  font-family: var(--yellow-tail);
   font-size: 68px;
   letter-spacing: calc(68px * 0.01);
   rotate: -13.42deg;
@@ -59,7 +59,7 @@
 }
 
 .cta1 {
-  font-family: Filson Pro, sans-serif;
+  font-family: var(--filson-pro);
   font-size: 50px;
   font-style: italic;
   font-weight: 100;
@@ -69,7 +69,7 @@
 
 .cta2,
 .cta3 {
-  font-family: League Spartan, sans-serif;
+  font-family: var(--league-spartan);
   font-size: 68px;
   font-weight: bold;
   letter-spacing: calc(68px * 0.02);

@@ -6,7 +6,7 @@
 }
 
 .p1 {
-  font-family: Filson Pro, sans-serif;
+  font-family: var(--filson-pro);
   font-size: 26px;
   font-weight: 100;
   font-style: italic;
@@ -16,7 +16,7 @@
 }
 
 .p2 {
-  font-family: League Spartan, sans-serif;
+  font-family: var(--league-spartan);
   font-size: 32px;
   font-weight: bold;
   letter-spacing: calc(32px * 0.04);

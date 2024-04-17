@@ -14,9 +14,8 @@
 }
 
 .p {
-  font-family: Filson Pro, sans-serif;
+  font-family: var(--filson-pro);
   font-size: 20px;
-  font-weight: 100;
   line-height: 30px;
   color: var(--light_gray);
   letter-spacing: calc(20+ (20 * 0.12px));
