@@ -6,6 +6,9 @@ const Navbar = () => {
     <nav className={styles.container}>
       <div className={styles.content}>
         <Link href={"#"}>início</Link>
+        <Link href={"#"}>sobre nós</Link>
+        <Link href={"#"}>contacto</Link>
+        <Link href={"#"}>localização</Link>
       </div>
     </nav>
   );

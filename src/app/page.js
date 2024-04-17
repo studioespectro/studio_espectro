@@ -1,6 +1,7 @@
 import CTA from "./components/CTA";
 import Header from "./components/Header";
 import Just4 from "./components/Just4";
+import Location from "./components/Location";
 import Navbar from "./components/Navbar";
 import Sentence from "./components/Sentence";
 import {
@@ -21,6 +22,7 @@ export default function Home() {
       <CTA />
       <Just4 />
       <Sentence />
+      <Location />
     </main>
   );
 }
