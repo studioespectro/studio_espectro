@@ -34,10 +34,17 @@
   bottom: 0;
 }
 
-.brevemente {
+.brevemente_wrap {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  /* z-index: 2; */
+  width: 100vw;
+  height: 1500px;
+  margin: 0;
+}
+
+.brevemente {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 }

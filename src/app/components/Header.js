@@ -26,13 +26,15 @@ const Header = () => {
         />
       </div>
       <Quotes />
-      <Image
-        src={"/assets/_brevemente_pb.png"}
-        width={1343}
-        height={1500}
-        alt="brevemente"
-        className={styles.brevemente}
-      />
+      <div className={styles.brevemente_wrap}>
+        <Image
+          src={"/assets/_brevemente_pb.png"}
+          fill
+          alt="brevemente"
+          className={styles.brevemente}
+          style={{ objectFit: "cover", objectPosition: "center" }}
+        />
+      </div>
     </header>
   );
 };

@@ -31,7 +31,7 @@ const Just4 = () => {
           olhar <span>PERSONALIZADO de verdade!</span>
         </p>
         <div className={styles.arrow}>
-          <Button color={"dark"} />
+          <Button color={"dark"} content={"inscreve-te"} />
           <Image
             src={"/assets/arrow_light.png"}
             width={62}

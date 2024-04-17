@@ -3,7 +3,7 @@ import styles from "./Quotes.module.css";
 
 const Quotes = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <Image
         src={"/assets/background_sentence.jpg"}
         fill

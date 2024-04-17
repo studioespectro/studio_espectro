@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Button.module.css";
 
-const Button = ({ color }) => {
+const Button = ({ color, content, type }) => {
   let text;
   let backgorund;
   let shadow;
@@ -28,14 +28,20 @@ const Button = ({ color }) => {
         backgroundColor: backgorund,
         boxShadow: `5px 10px 0 0 ${shadow}`,
       }}
+      type={type ? type : null}
     >
-      inscreve-te <span>|</span>
-      <Image
-        src={`/assets/click_${icon}.png`}
-        width={27}
-        height={35}
-        alt="ícone"
-      />
+      {content}
+      {content === "inscreve-te" ? (
+        <>
+          <span>|</span>
+          <Image
+            src={`/assets/click_${icon}.png`}
+            width={27}
+            height={35}
+            alt="ícone"
+          />
+        </>
+      ) : null}
     </button>
   );
 };

@@ -1,16 +1,12 @@
 import Image from "next/image";
 import styles from "./CTA.module.css";
 import Button from "./Button";
+import DivisorUp from "./DivisorUp";
 
 const CTA = () => {
   return (
     <div className={styles.container}>
-      <Image
-        src={"/assets/rainbow.png"}
-        width={86}
-        height={34}
-        alt="Símbolo Studio Espectro "
-      />
+      <DivisorUp />
       <div className={styles.content}>
         <div className={styles.slogan}>
           <p className={styles.p1}>O teu</p>
@@ -33,7 +29,7 @@ const CTA = () => {
             />
             <div className={styles.arrow_right}>
               <p className={styles.cta3}>Exclusivo!</p>
-              <Button color={"light"} />
+              <Button color={"light"} content={"inscreve-te"} />
             </div>
           </div>
         </div>

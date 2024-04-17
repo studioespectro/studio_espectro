@@ -2,7 +2,7 @@
   background-color: var(--light_gray);
   color: var(--dark_gray);
   position: relative;
-  border-bottom: 0.5px solid #706d6b;
+  /* border-bottom: 0.5px solid #706d6b; */
 }
 
 .p1 {

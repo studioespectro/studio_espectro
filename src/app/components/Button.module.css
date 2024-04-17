@@ -11,4 +11,10 @@
   font-size: 34px;
   letter-spacing: calc(34px * 0.21);
   margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  font-size: 38px;
 }

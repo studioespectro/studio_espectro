@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Sentence.module.css";
+import DivisorDown from "./DivisorDown";
 
 const Sentence = () => {
   return (
@@ -14,13 +15,7 @@ const Sentence = () => {
         <br />
         algo diferente!
       </p>
-      <Image
-        src={"/assets/rainbow.png"}
-        width={86}
-        height={34}
-        alt="Símbolo Studio Espectro "
-        className={styles.rainbow}
-      />
+      <DivisorDown />
     </section>
   );
 };
