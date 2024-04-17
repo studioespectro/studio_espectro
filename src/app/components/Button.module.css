@@ -1,0 +1,14 @@
+.button {
+  width: 425px;
+  height: 90px;
+  border: 1px solid;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: New Order, sans-serif;
+  font-size: 34px;
+  letter-spacing: calc(34px * 0.21);
+  margin-top: 20px;
+}

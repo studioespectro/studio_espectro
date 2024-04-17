@@ -1,0 +1,29 @@
+.container {
+  width: 100vw;
+  height: 776px;
+  position: relative;
+  border-top: 0.5px solid #706d6b;
+  /* background-color: var(--light_gray); */
+  /* border-bottom: 1px solid var(--dark_gray); */
+}
+
+.content {
+  max-width: 669px;
+  margin: 0 auto;
+  padding-top: 97px;
+}
+
+.p {
+  font-family: Filson Pro, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+  color: var(--light_gray);
+  letter-spacing: calc(20+ (20 * 0.12px));
+  text-align: end;
+}
+
+.author {
+  font-size: 14px;
+  margin-top: 20px;
+}

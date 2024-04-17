@@ -1,0 +1,44 @@
+.container {
+  background-color: var(--dark_gray);
+  height: 725px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -90px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.logo {
+  position: relative;
+  width: 500px;
+  padding-top: 12.57%;
+}
+
+.container h2 {
+  font-family: New Order;
+  font-size: 26px;
+  letter-spacing: 5.46px;
+  color: var(--light_gray);
+}
+
+.colors_bar {
+  position: absolute;
+  bottom: 0;
+}
+
+.brevemente {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* z-index: 2; */
+}
