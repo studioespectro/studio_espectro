@@ -24,15 +24,11 @@ const Quotes = () => {
       />
       <div className={styles.content}>
         <p className={styles.p}>
-          “Queremos trazer um novo
-          <br />
-          conceito de studio onde o<br />
-          aluno possa se tornar sua melhor
-          <br />
-          versão a cada dia. Um espaço onde
-          <br />
-          ele não tenha que ir treinar, mas
-          <br />
+          “Queremos trazer um novo <br />
+          conceito de studio onde o <br />
+          aluno possa se tornar sua melhor <br />
+          versão a cada dia. Um espaço onde <br />
+          ele não tenha que ir treinar, mas <br />
           sim, onde ele QUEIRA ir treinar”
         </p>
         <p className={`${styles.p} ${styles.author}`}>
