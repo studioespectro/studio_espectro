@@ -47,6 +47,7 @@ const Button = ({ color, content, type, href }) => {
             width={27}
             height={35}
             alt="ícone"
+            className={styles.icon}
           />
         </>
       ) : null}

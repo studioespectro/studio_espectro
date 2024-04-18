@@ -32,4 +32,9 @@
   .button:hover {
     font-size: calc(38px * var(--percentage));
   }
+
+  .icon {
+    width: calc(27px * var(--percentage));
+    height: calc(35px * var(--percentage));
+  }
 }
