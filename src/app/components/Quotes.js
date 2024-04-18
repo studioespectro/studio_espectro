@@ -8,8 +8,19 @@ const Quotes = () => {
         src={"/assets/background_sentence.jpg"}
         fill
         alt="background"
-        sizes="100vw"
+        priority
         style={{ zIndex: "-1" }}
+        className={styles.desktop}
+        sizes="100vw"
+      />
+      <Image
+        src={"/assets/background_sentence_vert.jpg"}
+        fill
+        alt="background"
+        sizes="100vw"
+        priority
+        style={{ zIndex: "-1" }}
+        className={styles.mobile}
       />
       <div className={styles.content}>
         <p className={styles.p}>

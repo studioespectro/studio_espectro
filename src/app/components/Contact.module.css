@@ -1,5 +1,6 @@
 .container {
   background-color: var(--light_gray);
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,39 +12,58 @@
 }
 
 .container p {
+  --size: 27px;
+  --final-size: var(--size);
   font-family: var(--new-order);
-  font-size: 27px;
+  font-size: var(--final-size);
   line-height: 30px;
-  letter-spacing: calc(27px * 0.17);
+  letter-spacing: calc(var(--final-size) * 0.17);
   text-align: center;
 }
 
 .container p span {
-  font-size: 33px;
+  --size: 33px;
+  --final-size: var(--size);
+  font-size: var(--final-size);
 }
 
 .form {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 570px;
 }
 
 .form label {
+  --size: 34px;
+  --final-size: var(--size);
   font-family: var(--league-spartan);
-  font-size: 34px;
-  letter-spacing: calc(34px * 0.04);
+  font-size: var(--final-size);
+  letter-spacing: calc(var(--final-size) * 0.04);
   text-transform: uppercase;
   color: #aca9a7;
 }
 
 .form input {
   display: block;
-  width: 570px;
+  width: 100%;
+  max-width: 570px;
   height: 40px;
   border: 1px solid var(--dark_gray);
   border-radius: 9px;
   margin-bottom: 35px;
   background-color: transparent;
+  padding: 0 10px;
+  font-family: var(--new-order);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.form input:focus {
+  box-shadow: 0 0 2px 3px #0000003a !important;
+  background-color: #d3d3d3;
+  outline: none;
 }
 
 .button {
@@ -71,15 +91,44 @@
 }
 
 .whatsapp p {
-  font-size: 25px;
-  letter-spacing: calc(25px * 0.07);
+  --size: 25px;
+  --final-size: var(--size);
+  font-size: var(--final-size);
+  letter-spacing: calc(var(--final-size) * 0.07);
 }
 
 .instagram p {
-  font-size: 30px;
-  letter-spacing: calc(30px * 0.07);
+  --size: 30px;
+  --final-size: var(--size);
+  font-size: var(--final-size);
+  letter-spacing: calc(var(--final-size) * 0.07);
 }
 
 .whatsapp {
   margin-bottom: 11px;
+}
+
+@media (max-width: 768px) {
+  .container p,
+  .container p span,
+  .form label,
+  .instagram p,
+  .whatsapp p,
+  .instagram img,
+  .whatsapp img {
+    --percentage: 0.7;
+    --final-size: calc(var(--size) * var(--percentage));
+  }
+
+  .instagram img,
+  .whatsapp img {
+    width: calc(42px * var(--percentage));
+    height: calc(42px * var(--percentage));
+  }
+}
+
+@media (max-width: 590px) {
+  .form {
+    width: 90%;
+  }
 }

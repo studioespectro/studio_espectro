@@ -18,3 +18,18 @@
 .button:hover {
   font-size: 38px;
 }
+
+@media (max-width: 768px) {
+  .button {
+    width: calc(425px * var(--percentage));
+    height: calc(90px * var(--percentage));
+    border-radius: calc(50px * var(--percentage));
+    gap: calc(20px * var(--percentage));
+    font-size: calc(34px * var(--percentage));
+    letter-spacing: calc(calc(34px * var(--percentage)) * 0.21);
+  }
+
+  .button:hover {
+    font-size: calc(38px * var(--percentage));
+  }
+}

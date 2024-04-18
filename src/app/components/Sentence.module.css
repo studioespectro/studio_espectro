@@ -6,20 +6,24 @@
 }
 
 .p1 {
+  --size: 26px;
+  --final-size: var(--size);
   font-family: var(--filson-pro);
-  font-size: 26px;
+  font-size: var(--final-size);
   font-weight: 100;
   font-style: italic;
-  letter-spacing: calc(26px * 0.02);
+  letter-spacing: calc(var(--final-size) * 0.02);
   text-align: center;
   padding-top: 100px;
 }
 
 .p2 {
+  --size: 32px;
+  --final-size: var(--size);
   font-family: var(--league-spartan);
-  font-size: 32px;
+  font-size: var(--final-size);
   font-weight: bold;
-  letter-spacing: calc(32px * 0.04);
+  letter-spacing: calc(var(--final-size) * 0.04);
   text-align: center;
   padding-bottom: 100px;
 }
@@ -29,4 +33,11 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .p1,
+  .p2 {
+    --final-size: calc(var(--size) * var(--percentage));
+  }
 }

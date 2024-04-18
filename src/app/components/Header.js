@@ -4,7 +4,7 @@ import Quotes from "./Quotes";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="home">
       <div className={styles.container}>
         <div className={styles.title}>
           <div className={styles.logo}>
@@ -12,6 +12,7 @@ const Header = () => {
               src={"/assets/logo_espectro.svg"}
               fill
               alt="Logo Studio Espectro"
+              sizes="500px"
             />
           </div>
           <h1 style={{ display: "none" }}>Studio Espectro</h1>
@@ -24,17 +25,24 @@ const Header = () => {
           alt="Símbolo Studio Espectro"
           className={styles.colors_bar}
         />
-      </div>
-      <Quotes />
-      <div className={styles.brevemente_wrap}>
         <Image
           src={"/assets/_brevemente_pb.png"}
           fill
           alt="brevemente"
-          className={styles.brevemente}
+          className={`${styles.brevemente} ${styles.mobile}`}
           style={{ objectFit: "cover", objectPosition: "center" }}
+          sizes="100vw"
         />
       </div>
+      <Quotes />
+      <Image
+        src={"/assets/_brevemente_pb.png"}
+        fill
+        alt="brevemente"
+        className={`${styles.brevemente} ${styles.desktop}`}
+        style={{ objectFit: "cover", objectPosition: "center" }}
+        sizes="100vw"
+      />
     </header>
   );
 };

@@ -1,4 +1,12 @@
 import "./globals.css";
+import {
+  FilsonPro,
+  NewOrder,
+  LeagueSpartan,
+  HeadLineA,
+  YellowTail,
+} from "./helpers/fonts";
+import { ContextProvider } from "./hooks/Context";
 
 export const metadata = {
   title: "Studio Espectro",
@@ -12,7 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt">
-      <body>{children}</body>
+      <body
+        className={`${FilsonPro.variable} ${LeagueSpartan.variable} ${HeadLineA.variable} ${YellowTail.variable} ${NewOrder.variable}`}
+      >
+        <ContextProvider>{children}</ContextProvider>
+      </body>
     </html>
   );
 }

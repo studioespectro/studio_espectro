@@ -5,7 +5,7 @@ import DivisorUp from "./DivisorUp";
 
 const CTA = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <DivisorUp />
       <div className={styles.content}>
         <div className={styles.slogan}>
@@ -29,12 +29,16 @@ const CTA = () => {
             />
             <div className={styles.arrow_right}>
               <p className={styles.cta3}>Exclusivo!</p>
-              <Button color={"light"} content={"inscreve-te"} />
+              <Button
+                color={"light"}
+                content={"inscreve-te"}
+                href={"#contact"}
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

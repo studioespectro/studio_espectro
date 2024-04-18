@@ -3,26 +3,57 @@
   height: 776px;
   position: relative;
   border-top: 0.5px solid #706d6b;
-  /* background-color: var(--light_gray); */
-  /* border-bottom: 1px solid var(--dark_gray); */
 }
 
 .content {
   max-width: 669px;
   margin: 0 auto;
-  padding-top: 97px;
+  padding: 97px 20px 0;
 }
 
 .p {
   font-family: var(--filson-pro);
   font-size: 20px;
   line-height: 30px;
+  font-style: italic;
   color: var(--light_gray);
-  letter-spacing: calc(20+ (20 * 0.12px));
-  text-align: end;
+  letter-spacing: calc(20px * 0.12);
+  text-align: right;
 }
 
 .author {
   font-size: 14px;
   margin-top: 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: fit-content;
+  }
+
+  .content {
+    padding: 150px 20px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .p br {
+    display: none;
+  }
 }

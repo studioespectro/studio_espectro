@@ -7,7 +7,7 @@ const Footer = () => {
   let ano = year.getFullYear();
 
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <div className={styles.content}>
         <div className={styles.logo}>
           <Image
@@ -27,7 +27,7 @@ const Footer = () => {
           <span>Web designer: Victor Merseguel</span>
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

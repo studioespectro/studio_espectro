@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Just4 = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.content}>
         <div className={styles.title}>
           <h2>Just4</h2>
@@ -31,17 +31,17 @@ const Just4 = () => {
           olhar <span>PERSONALIZADO de verdade!</span>
         </p>
         <div className={styles.arrow}>
-          <Button color={"dark"} content={"inscreve-te"} />
+          <Button color={"dark"} content={"inscreve-te"} href={"#contact"} />
           <Image
             src={"/assets/arrow_light.png"}
             width={62}
             height={118}
             alt="seta"
-            className={styles.arrow}
+            className={styles.arrow_img}
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

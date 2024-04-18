@@ -41,3 +41,22 @@
   font-size: 57px;
   letter-spacing: calc(57px * 0.08);
 }
+
+@media (max-width: 650px) {
+  .title p:first-of-type {
+    font-size: calc(167px * var(--percentage));
+    letter-spacing: calc((167px * var(--percentage)) * 0.06);
+  }
+
+  .title p:last-of-type {
+    font-size: calc(97px * var(--percentage));
+    letter-spacing: calc((97px * var(--percentage)) * 0.06);
+    margin: calc(-105px * var(--percentage)) 0 90px
+      calc(87px * var(--percentage));
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    --percentage: 0.5;
+  }
+}

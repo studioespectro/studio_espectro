@@ -2,34 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --dark_gray: #232728;
   --light_gray: #c6c4c2;
-}
-
-@font-face {
-  font-family: New Order;
-  src: url("/public/fonts/New_Order_Light.otf") format("otf");
-}
-
-@font-face {
-  font-family: Filson Pro;
-  src: url("/public/fonts/FilsonProThinItalic.otf") format("otf");
-}
-
-@font-face {
-  font-family: HeadLineA;
-  src: url("/public/fonts/HeadLineA.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: League Spartan;
-  src: url("/public/fonts/league-spartan.bold.otf") format("otf");
-}
-
-@font-face {
-  font-family: YellowTail;
-  src: url("/public/fonts/Yellowtail-Regular.ttf") format("ttf");
+  --percentage: 0.6;
 }

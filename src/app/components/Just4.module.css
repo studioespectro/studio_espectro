@@ -12,14 +12,16 @@
 }
 
 .title {
-  text-align: end;
+  text-align: right;
 }
 
 .title h2 {
+  --size: 140px;
+  --final-size: var(--size);
   font-family: var(--league-spartan);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 140px;
+  font-size: var(--final-size);
 }
 
 .title img {
@@ -46,27 +48,31 @@
 }
 
 .p1 {
-  font-size: 27px;
+  --size: 27px;
+  --final-size: var(--size);
+  font-size: var(--final-size);
   margin-bottom: 15px;
-  letter-spacing: calc(27px * 0.02);
+  letter-spacing: calc(var(--final-size) * 0.02);
 }
 .p1 span {
-  letter-spacing: calc(27px * 0.06);
+  letter-spacing: calc(var(--final-size) * 0.06);
 }
 
 .p2,
 .p3 {
-  font-size: 33px;
-  letter-spacing: calc(33px * 0.02);
+  --size: 33px;
+  --final-size: var(--size);
+  font-size: var(--final-size);
+  letter-spacing: calc(var(--final-size) * 0.02);
 }
 
 .p2 span,
 .p3 span {
-  letter-spacing: calc(33px * 0.06);
+  letter-spacing: calc(var(--final-size) * 0.06);
 }
 
 .p2 {
-  text-align: end;
+  text-align: right;
   margin-bottom: 40px;
 }
 
@@ -78,4 +84,30 @@
   display: flex;
   align-items: flex-end;
   gap: 72px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title h2 {
+    --final-size: calc(var(--size) * var(--percentage));
+  }
+  .p1,
+  .p2,
+  .p3 {
+    --size: 33px;
+    --final-size: calc(var(--size) * var(--percentage));
+  }
+
+  .arrow {
+    gap: 36px;
+  }
+
+  .arrow_img {
+    width: calc(68px * var(--percentage));
+    height: calc(118px 8 var(--percentage));
+  }
 }

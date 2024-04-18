@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import styles from "./Button.module.css";
+import { useRouter } from "next/navigation";
 
-const Button = ({ color, content, type }) => {
+const Button = ({ color, content, type, href }) => {
+  const router = useRouter();
   let text;
   let backgorund;
   let shadow;
@@ -19,6 +22,10 @@ const Button = ({ color, content, type }) => {
     icon = "light";
   }
 
+  const handleClick = () => {
+    href ? router.push(href) : null;
+  };
+
   return (
     <button
       className={styles.button}
@@ -29,6 +36,7 @@ const Button = ({ color, content, type }) => {
         boxShadow: `5px 10px 0 0 ${shadow}`,
       }}
       type={type ? type : null}
+      onClick={handleClick}
     >
       {content}
       {content === "inscreve-te" ? (

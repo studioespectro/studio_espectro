@@ -22,3 +22,21 @@
   font-family: var(--new-order);
   text-decoration: none;
 }
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 34px;
+    right: 38px;
+    z-index: 5;
+  }
+}
