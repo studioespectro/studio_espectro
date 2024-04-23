@@ -5,6 +5,7 @@ export const Context = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [menu, setMenu] = useState(false);
+
   if (typeof window !== "undefined") {
     menu
       ? (window.document.querySelector("body").style.overflow = "hidden")
