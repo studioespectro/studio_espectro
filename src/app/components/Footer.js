@@ -21,10 +21,10 @@ const Footer = () => {
           <span>copyright © {ano} - studio espectro</span>
           <span>|</span>
           <span className={styles.link}>Termos de Uso</span>
-          <span>|</span>{" "}
+          <span>|</span>
           <span className={styles.link}>Política de Privacidade </span>
           <span>|</span>
-          <span>Web designer: Victor Merseguel</span>
+          <span className={styles.link}>Web developer: Victor Merseguel</span>
         </p>
       </div>
     </footer>
