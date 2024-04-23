@@ -17,7 +17,7 @@ const Contact = () => {
   const [errorMsg, setErrorMsg] = useState(null);
   const [successMsg, setSuccessMsg] = useState(null);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     const regexName = "";
@@ -73,14 +73,13 @@ const Contact = () => {
               "Algo deu errado :/ Por favor, revisa as informações e tenta novamente."
             ),
             console.log(result === "error"))
-          : setSuccessMsg("Inscrição realizada! :)"),
-          setName(""),
-          setEmail(""),
-          setPhone(""),
-          setTimeout(() => {
-            setSuccessMsg(null);
-          }, 2500);
-        // do something with response
+          : (setSuccessMsg("Inscrição realizada! :)"),
+            setName(""),
+            setEmail(""),
+            setPhone(""),
+            setTimeout(() => {
+              setSuccessMsg(null);
+            }, 2500));
       }
     );
   };
