@@ -20,6 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt">
+      <meta
+        name="facebook-domain-verification"
+        content="ugxw5pa7vnyw1iqdch6xp0ccnu7khh"
+      />
       <body
         className={`${FilsonPro.variable} ${LeagueSpartan.variable} ${HeadLineA.variable} ${YellowTail.variable} ${NewOrder.variable}`}
       >
