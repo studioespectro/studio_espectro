@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="pt">
       <meta
         name="facebook-domain-verification"
-        content="ugxw5pa7vnyw1iqdch6xp0ccnu7khh"
+        content="qkirify6dyp1rjblzefuke1m74u423"
       />
       <Script
         id="google-tag-manager"
